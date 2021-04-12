@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prosjekt.SignupController">
+   <children>
+      <Text layoutX="456.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="243.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username:" wrappingWidth="120.2591323852539">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="243.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email:" wrappingWidth="56.259117126464844">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="243.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password:" wrappingWidth="99.5925064086914">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="243.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="repeat password:" wrappingWidth="153.59252166748047">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="passwordNotEqualText" layoutX="319.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="314.44793701171875" />
+      <CheckBox fx:id="instructorCheckbox" layoutX="433.0" layoutY="337.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text="Instructor" />
+      <Button fx:id="signupButton" layoutX="433.0" layoutY="433.0" mnemonicParsing="false" onAction="#handleSignup" prefHeight="40.0" prefWidth="85.0" text="SIGN UP" />
+      <TextField fx:id="usernameTextField" layoutX="586.0" layoutY="119.0" prefHeight="28.0" prefWidth="188.0" />
+      <TextField fx:id="emailTextField" layoutX="586.0" layoutY="164.0" prefHeight="28.0" prefWidth="188.0" />
+      <PasswordField fx:id="passwordField1" layoutX="586.0" layoutY="216.0" prefHeight="25.0" prefWidth="188.0" />
+      <PasswordField fx:id="passwordField2" layoutX="586.0" layoutY="267.0" prefHeight="25.0" prefWidth="188.0" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+   </children>
+</AnchorPane>

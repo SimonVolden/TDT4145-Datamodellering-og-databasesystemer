@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prosjekt.PostController">
+   <children>
+      <Text layoutX="445.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PIAZZA" wrappingWidth="134.10220336914062">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button id="profil" fx:id="logoutButton" layoutX="895.0" layoutY="27.0" mnemonicParsing="false" onAction="#logout" prefHeight="33.0" prefWidth="81.0" text="Log out" textAlignment="CENTER" />
+      <Accordion layoutX="14.0" layoutY="144.0" />
+      <Accordion layoutX="14.0" layoutY="134.0" prefHeight="51.0" prefWidth="202.0" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="33.0" prefWidth="71.0" text="Back" />
+      <Text fx:id="usernameText" layoutX="623.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="81.0" />
+      <Text layoutX="461.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER" wrappingWidth="101.33333333333331">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="titleTextField" layoutX="378.0" layoutY="232.0" prefHeight="27.0" prefWidth="268.0" />
+      <Text layoutX="478.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Content" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="contentTextArea" layoutX="357.0" layoutY="310.0" prefHeight="134.0" prefWidth="334.0" />
+      <CheckBox fx:id="anonymousCheckBox" layoutX="460.0" layoutY="466.0" mnemonicParsing="false" text="Anonymous">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="postMyQuestionButton" layoutX="439.0" layoutY="503.0" mnemonicParsing="false" onAction="#post" prefHeight="33.0" prefWidth="142.0" text="Post my question" />
+      <Text fx:id="successfullyAddedText" layoutX="430.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="163.13671875" />
+      <ScrollPane fx:id="folderScrollPane" layoutX="41.0" layoutY="82.0" pannable="true" prefHeight="51.0" prefWidth="965.0" />
+      <ScrollPane fx:id="tagScrollPane" layoutX="41.0" layoutY="134.0" pannable="true" prefHeight="51.0" prefWidth="965.0" />
+   </children>
+</AnchorPane>
